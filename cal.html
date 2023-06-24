@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator-container">
+    <h1><b>My Calculator</b></h1>
+
+    <form name="calculator" class="calculator">
+      <input name="screen" id="screen" class="screen" readonly>
+      <table>
+        <tr>
+          <td><input type="button" name="clear" value="C" onclick="clearScreen()"></td>
+          <td><input type="button" name="openbr" value="(" onclick="appendToScreen('(')"></td>
+          <td><input type="button" name="closebr" value=")" onclick="appendToScreen(')')"></td>
+          <td><input type="button" name="slash" value="/" onclick="appendToScreen('/')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="seven" value="7" onclick="appendToScreen('7')"></td>
+          <td><input type="button" name="eight" value="8" onclick="appendToScreen('8')"></td>
+          <td><input type="button" name="nine" value="9" onclick="appendToScreen('9')"></td>
+          <td><input type="button" name="mul" value="×" onclick="appendToScreen('*')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="four" value="4" onclick="appendToScreen('4')"></td>
+          <td><input type="button" name="five" value="5" onclick="appendToScreen('5')"></td>
+          <td><input type="button" name="six" value="6" onclick="appendToScreen('6')"></td>
+          <td><input type="button" name="sub" value="-" onclick="appendToScreen('-')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="one" value="1" onclick="appendToScreen('1')"></td>
+          <td><input type="button" name="two" value="2" onclick="appendToScreen('2')"></td>
+          <td><input type="button" name="three" value="3" onclick="appendToScreen('3')"></td>
+          <td><input type="button" name="add" value="+" onclick="appendToScreen('+')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="dzero" value="00" onclick="appendToScreen('00')"></td>
+          <td><input type="button" name="zero" value="0" onclick="appendToScreen('0')"></td>
+          <td><input type="button" name="dot" value="." onclick="appendToScreen('.')"></td>
+          <td><input type="button" name="evaluate" value="=" onclick="evaluateExpression()"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

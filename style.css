@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #FFD700, #f208d7);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.calculator-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+input {
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #28a4d8;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input:hover {
+  background-color: #1687a9;
+}
+
+.screen {
+  border-radius: 15px;
+  width: 300px;
+  height: 50px;
+  border: 5px solid #f85c5f;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 10px;
+  background-color: #eee;
+  color: #333;
+}
+
+.calculator {
+  display: inline-block;
+  background-color: #2a1e2c;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 40px;
+  color: #010101;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+   100% {
+    background-position: 0% 50%;
+  }
+}
